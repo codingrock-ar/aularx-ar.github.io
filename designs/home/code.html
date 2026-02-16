@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aula Rx | Excelencia en Bioimágenes</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#ffd900",
+              "background-light": "#f8f8f5",
+              "background-dark": "#181710",
+              "surface-dark": "#23200f",
+              "border-dark": "#3a3727",
+            },
+            fontFamily: {
+              "display": ["Lexend", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+        .glass-nav {
+            background: rgba(24, 23, 16, 0.8);
+            backdrop-filter: blur(12px);
+        }
+        .hero-gradient {
+            background: linear-gradient(rgba(24, 23, 16, 0.6) 0%, rgba(24, 23, 16, 0.95) 100%);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white antialiased selection:bg-primary selection:text-background-dark">
+<!-- Navigation -->
+<header class="fixed top-0 w-full z-50 border-b border-border-dark glass-nav">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3"><img alt="Aula Rx Logo" class="h-12 w-12 object-contain rounded-full border-2 border-primary" src="{{DATA:IMAGE:IMAGE_2}}"/> <h1 class="text-2xl font-black tracking-tighter text-white">AULA<span class="text-primary">RX</span></h1></div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#about">About</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#courses">Courses</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#achievements">Achievements</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#contact">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary hover:bg-yellow-400 text-background-dark px-6 py-2 rounded-lg font-bold text-sm transition-transform active:scale-95">
+                    Ver Cursos
+                </button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 hero-gradient z-10"></div>
+<img alt="Radiology backdrop" class="w-full h-full object-cover" data-alt="Abstract medical X-ray imaging background with high contrast" src="{{DATA:IMAGE:IMAGE_2}}"/>
+</div>
+<div class="relative z-20 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+                        Educación Digital en Bioimágenes
+                    </div>
+<h2 class="text-5xl lg:text-7xl font-black leading-[1.1] tracking-tight text-white">
+                        Transformando el <span class="text-primary">aula física</span> en virtual
+                    </h2>
+<p class="text-lg md:text-xl text-slate-400 max-w-xl leading-relaxed">
+                        Excelencia académica especializada. Formación experta en Rx, TC, RM, Mx y Anatomía para los profesionales del mañana.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary hover:bg-yellow-400 text-background-dark px-8 py-4 rounded-xl font-black text-lg transition-all shadow-lg shadow-primary/20">
+                            Explorar Cursos
+                        </button>
+<button class="bg-surface-dark border border-border-dark hover:bg-border-dark px-8 py-4 rounded-xl font-bold text-lg transition-all">
+                            Sobre Nosotros
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Pillars Section -->
+<section class="py-24 bg-background-dark relative">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<h3 class="text-primary font-bold tracking-widest uppercase text-sm mb-2">Especialidades</h3>
+<h2 class="text-4xl font-black text-white">Pilares de Contenido</h2>
+</div>
+<p class="text-slate-400 max-w-md">Estructura académica diseñada para cubrir todo el espectro de la radiología moderna con precisión técnica.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+<!-- Rx -->
+<div class="group p-8 rounded-2xl bg-surface-dark border border-border-dark hover:border-primary/50 transition-all">
+<span class="material-symbols-outlined text-primary text-4xl mb-6 block group-hover:scale-110 transition-transform">dangerous</span>
+<h4 class="text-xl font-bold text-white mb-2">Rx</h4>
+<p class="text-sm text-slate-400">Radiología Convencional y técnicas de posicionamiento.</p>
+</div>
+<!-- TC -->
+<div class="group p-8 rounded-2xl bg-surface-dark border border-border-dark hover:border-primary/50 transition-all">
+<span class="material-symbols-outlined text-primary text-4xl mb-6 block group-hover:scale-110 transition-transform">view_in_ar</span>
+<h4 class="text-xl font-bold text-white mb-2">TC</h4>
+<p class="text-sm text-slate-400">Tomografía Computada de alta resolución y reconstrucción.</p>
+</div>
+<!-- RM -->
+<div class="group p-8 rounded-2xl bg-surface-dark border border-border-dark hover:border-primary/50 transition-all">
+<span class="material-symbols-outlined text-primary text-4xl mb-6 block group-hover:scale-110 transition-transform">nest_cam_magnet_mount</span>
+<h4 class="text-xl font-bold text-white mb-2">RM</h4>
+<p class="text-sm text-slate-400">Física y aplicaciones de Resonancia Magnética.</p>
+</div>
+<!-- Mx -->
+<div class="group p-8 rounded-2xl bg-surface-dark border border-border-dark hover:border-primary/50 transition-all">
+<span class="material-symbols-outlined text-primary text-4xl mb-6 block group-hover:scale-110 transition-transform">medical_services</span>
+<h4 class="text-xl font-bold text-white mb-2">Mx</h4>
+<p class="text-sm text-slate-400">Mamografía y detección temprana de patologías.</p>
+</div>
+<!-- Anato -->
+<div class="group p-8 rounded-2xl bg-surface-dark border border-border-dark hover:border-primary/50 transition-all">
+<span class="material-symbols-outlined text-primary text-4xl mb-6 block group-hover:scale-110 transition-transform">skull</span>
+<h4 class="text-xl font-bold text-white mb-2">Anato</h4>
+<p class="text-sm text-slate-400">Anatomía Descriptiva y seccional aplicada.</p>
+</div>
+</div>
+</div>
+</section><section class="py-24 bg-surface-dark border-y border-border-dark"><div class="max-w-7xl mx-auto px-6 text-center"><h2 class="text-primary font-bold tracking-widest uppercase text-sm mb-2">Contenido Exclusivo</h2><h3 class="text-4xl font-black text-white mb-12">Evento del Mes</h3><div class="relative aspect-video rounded-3xl overflow-hidden group cursor-pointer border border-border-dark"><img alt="Video Thumbnail" class="w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv0M-9K6WLIYYrvrWaui-KLDugYqTlOMunzRNh6PV91ag22z8LPAqDYjNTN9GTW2DcQo_ajScyOSMlaCVEFBtY8-hDvijeFa1bl8Wy5DD8QXzet3u3ei11pORqkw8nHhCCrznEXY4NRLHDhIruhWBPB8kC5Z25urrD20CWGe6qc0UWPz52Vdg-7VBOk4AxMgOEmM_B2BXI0_vVSD-bwN6KJc0C3IIgq55UUCD0F9itm6cqj1xBw3DXn3kbGDYCEEW2511UvyGsgLjj"/><div class="absolute inset-0 flex items-center justify-center"><div class="w-24 h-24 bg-primary rounded-full flex items-center justify-center shadow-2xl shadow-primary/40 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined text-background-dark text-5xl fill-1">play_arrow</span></div></div></div></div></section>
+<!-- About Me / Profile -->
+<section class="py-24 bg-surface-dark border-y border-border-dark" id="about">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col lg:flex-row gap-16 items-center">
+<div class="lg:w-1/2 relative">
+<div class="absolute -top-4 -left-4 w-24 h-24 border-t-4 border-l-4 border-primary rounded-tl-2xl"></div>
+<div class="absolute -bottom-4 -right-4 w-24 h-24 border-b-4 border-r-4 border-primary rounded-br-2xl"></div>
+<div class="aspect-[4/5] rounded-xl overflow-hidden bg-background-dark">
+<img alt="Mg. Ileana Romina" class="w-full h-full object-cover" data-alt="Professional portrait of a female radiologist in an academic setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs-fnj9pIBJou5qZ6XwCEvT5xwgFvGe3r9RYVp8pH_RsLoq2HWTu1y6SUqci4stdgX14zlY-TOpGiWFcMGfr75uU_DyYttvb6LRxqxnXY3Dmw7fTZHJyiL2qAMsiqw4YAODA3Ncsycd7HbGW07JZWJGGv3xlsRi-dsTjI97yoGnKzL7JeepBYb_TmdUB0P5U09-Ym-OX9NDMePkKXKoYhi7B5VHT7zBgdnvQGqCts3FKvnEmH8tRKeUxDrh_MJG3lWq0dtU3yIxeP_"/>
+</div>
+</div>
+<div class="lg:w-1/2 space-y-6">
+<h3 class="text-primary font-bold tracking-widest uppercase text-sm">Directora Académica</h3>
+<h2 class="text-4xl lg:text-5xl font-black text-white">Mg. Ileana Romina</h2>
+<div class="space-y-4 text-slate-300 text-lg leading-relaxed">
+<p class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">school</span>
+                                Magister (Tech)
+                            </p>
+<p class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">menu_book</span>
+                                Profesorado (Usal)
+                            </p>
+<p class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">workspace_premium</span>
+                                Lic. en Bioimágenes (UBA)
+                            </p>
+</div>
+<div class="pt-8 border-t border-border-dark">
+<blockquote class="text-3xl font-light italic text-white/90 font-display">
+                                "Nada reemplaza al <span class="text-primary font-bold underline decoration-2 underline-offset-8">libro</span>"
+                            </blockquote>
+<p class="mt-4 text-slate-400">Defendemos la profundidad académica en la era de la información inmediata.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Courses -->
+<section class="py-24 bg-background-dark" id="courses">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-black text-white mb-4">Cursos Destacados</h2>
+<p class="text-slate-400 max-w-2xl mx-auto">Programas intensivos diseñados para elevar tu perfil profesional con contenido actualizado y práctico.</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Course 1 -->
+<div class="bg-surface-dark rounded-2xl overflow-hidden border border-border-dark hover:translate-y-[-8px] transition-all duration-300">
+<div class="h-48 relative">
+<img alt="Tomografía curso" class="w-full h-full object-cover" data-alt="Detailed CT scan image on professional monitors" src="{{DATA:IMAGE:IMAGE_7}}"/>
+<div class="absolute top-4 right-4 bg-primary text-background-dark font-black text-xs px-3 py-1 rounded">HOT</div>
+</div>
+<div class="p-8">
+<h4 class="text-xl font-bold text-white mb-3">Masterclass: Tomografía de Cráneo</h4>
+<p class="text-slate-400 text-sm mb-6">Desde la anatomía básica hasta protocolos avanzados de stroke y trauma.</p>
+<div class="flex items-center justify-between">
+<span class="text-primary font-bold">Inscripciones Abiertas</span>
+<button class="text-white hover:text-primary font-bold flex items-center gap-2 transition-colors">
+                                    Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Course 2 -->
+<div class="bg-surface-dark rounded-2xl overflow-hidden border border-border-dark hover:translate-y-[-8px] transition-all duration-300">
+<div class="h-48 relative">
+<img alt="Radiología curso" class="w-full h-full object-cover" data-alt="X-ray viewing station with multiple lightboxes" src="{{DATA:IMAGE:IMAGE_5}}"/>
+</div>
+<div class="p-8">
+<h4 class="text-xl font-bold text-white mb-3">Técnicas de Rx Osteoarticular</h4>
+<p class="text-slate-400 text-sm mb-6">Perfeccionamiento en proyecciones especiales y criterios de evaluación.</p>
+<div class="flex items-center justify-between">
+<span class="text-primary font-bold">12 Semanas</span>
+<button class="text-white hover:text-primary font-bold flex items-center gap-2 transition-colors">
+                                    Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Course 3 -->
+<div class="bg-surface-dark rounded-2xl overflow-hidden border border-border-dark hover:translate-y-[-8px] transition-all duration-300">
+<div class="h-48 relative">
+<img alt="RM curso" class="w-full h-full object-cover" data-alt="MRI scanner in a modern hospital room" src="{{DATA:IMAGE:IMAGE_6}}"/>
+</div>
+<div class="p-8">
+<h4 class="text-xl font-bold text-white mb-3">Iniciación a la Resonancia</h4>
+<p class="text-slate-400 text-sm mb-6">Entendiendo el espín y las secuencias básicas: T1, T2 y FLAIR.</p>
+<div class="flex items-center justify-between">
+<span class="text-primary font-bold">Nivel Inicial</span>
+<button class="text-white hover:text-primary font-bold flex items-center gap-2 transition-colors">
+                                    Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Achievements Section -->
+<section class="py-24 bg-primary text-background-dark" id="achievements">
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 text-center">
+<div class="space-y-2">
+<span class="text-5xl font-black block">15+</span>
+<span class="text-sm font-bold uppercase tracking-widest">Años de Experiencia</span>
+</div>
+<div class="space-y-2">
+<span class="text-5xl font-black block">5k+</span>
+<span class="text-sm font-bold uppercase tracking-widest">Alumnos Formados</span>
+</div>
+<div class="space-y-2">
+<span class="text-5xl font-black block">20+</span>
+<span class="text-sm font-bold uppercase tracking-widest">Cursos Online</span>
+</div>
+<div class="space-y-2">
+<span class="text-5xl font-black block">100%</span>
+<span class="text-sm font-bold uppercase tracking-widest">Calidad Académica</span>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-20 bg-primary"><div class="max-w-7xl mx-auto px-6 text-center text-background-dark"><h2 class="text-4xl md:text-5xl font-black mb-6">Inscríbete a nuestras Charlas Gratuitas</h2><p class="text-xl font-medium mb-10 max-w-2xl mx-auto opacity-90">Actualización constante en técnicas de diagnóstico por imágenes de la mano de expertos internacionales.</p><button class="bg-background-dark text-primary px-10 py-5 rounded-2xl font-black text-xl hover:scale-105 transition-transform shadow-2xl">Inscribirme ahora</button></div></section><!-- Testimonials Section -->
+<section class="py-24 bg-background-dark" id="testimonials">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h3 class="text-primary font-bold tracking-widest uppercase text-sm mb-2">Testimonios</h3>
+<h2 class="text-4xl font-black text-white">Lo que dicen nuestros alumnos</h2>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="bg-surface-dark p-8 rounded-3xl border border-border-dark flex flex-col items-center text-center">
+<div class="w-20 h-20 rounded-full overflow-hidden mb-6 border-2 border-primary">
+<img alt="Estudiante 1" class="w-full h-full object-cover" src="{{DATA:IMAGE:IMAGE_2}}"/>
+</div>
+<p class="text-slate-300 italic mb-6">"La calidad de las imágenes y la claridad de la Mg. Ileana en sus explicaciones transformaron mi manera de abordar la TC de cráneo. Altamente recomendado."</p>
+<div>
+<h4 class="text-white font-bold">Lic. Carlos Méndez</h4>
+<span class="text-primary text-sm">Técnico Radiólogo</span>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-dark p-8 rounded-3xl border border-border-dark flex flex-col items-center text-center">
+<div class="w-20 h-20 rounded-full overflow-hidden mb-6 border-2 border-primary">
+<img alt="Estudiante 2" class="w-full h-full object-cover" src="{{DATA:IMAGE:IMAGE_2}}"/>
+</div>
+<p class="text-slate-300 italic mb-6">"Poder estudiar a mi ritmo con contenido tan actualizado es impagable. El curso de Resonancia Magnética es el más completo que he realizado hasta ahora."</p>
+<div>
+<h4 class="text-white font-bold">Dra. Sofía Martínez</h4>
+<span class="text-primary text-sm">Médica Imagenóloga</span>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-surface-dark p-8 rounded-3xl border border-border-dark flex flex-col items-center text-center">
+<div class="w-20 h-20 rounded-full overflow-hidden mb-6 border-2 border-primary">
+<img alt="Estudiante 3" class="w-full h-full object-cover" src="{{DATA:IMAGE:IMAGE_2}}"/>
+</div>
+<p class="text-slate-300 italic mb-6">"Aula Rx me brindó las herramientas técnicas necesarias para destacar en mi práctica diaria. La profundidad académica es realmente superior."</p>
+<div>
+<h4 class="text-white font-bold">Lic. Javier López</h4>
+<span class="text-primary text-sm">Especialista en Bioimágenes</span>
+</div>
+</div>
+</div>
+</div>
+</section><section class="py-24 bg-background-dark relative overflow-hidden" id="contact">
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<div class="bg-surface-dark rounded-3xl border border-border-dark p-8 md:p-16">
+<div class="grid lg:grid-cols-2 gap-16">
+<div class="space-y-8">
+<h2 class="text-4xl font-black text-white">¿Tienes consultas?<br/><span class="text-primary">Escríbenos.</span></h2>
+<p class="text-slate-400 leading-relaxed">
+                                Estamos aquí para guiarte en tu formación profesional. Consulta por planes para instituciones o becas disponibles.
+                            </p>
+<div class="space-y-4">
+<a class="flex items-center gap-4 text-white hover:text-primary transition-colors" href="#">
+<div class="w-12 h-12 rounded-full bg-border-dark flex items-center justify-center">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<span>hola@aularx.com</span>
+</a>
+<a class="flex items-center gap-4 text-white hover:text-primary transition-colors" href="#">
+<div class="w-12 h-12 rounded-full bg-border-dark flex items-center justify-center">
+<span class="material-symbols-outlined">brand_awareness</span>
+</div>
+<span>@aula.rx en Instagram</span>
+</a>
+</div>
+</div>
+<form class="space-y-4">
+<div class="grid md:grid-cols-2 gap-4">
+<input class="w-full bg-background-dark border-border-dark rounded-xl px-4 py-3 text-white focus:ring-primary focus:border-primary" placeholder="Nombre" type="text"/>
+<input class="w-full bg-background-dark border-border-dark rounded-xl px-4 py-3 text-white focus:ring-primary focus:border-primary" placeholder="Email" type="email"/>
+</div>
+<input class="w-full bg-background-dark border-border-dark rounded-xl px-4 py-3 text-white focus:ring-primary focus:border-primary" placeholder="Asunto" type="text"/>
+<textarea class="w-full bg-background-dark border-border-dark rounded-xl px-4 py-3 text-white focus:ring-primary focus:border-primary" placeholder="Tu mensaje..." rows="4"></textarea>
+<button class="w-full bg-primary text-background-dark font-black py-4 rounded-xl hover:bg-yellow-400 transition-colors" type="submit">
+                                Enviar Mensaje
+                            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background-dark border-t border-border-dark py-12">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-3"><img alt="Aula Rx Logo" class="h-10 w-10 object-contain rounded-full border border-primary" src="{{DATA:IMAGE:IMAGE_2}}"/> <span class="text-xl font-black tracking-tighter text-white">AULA<span class="text-primary">RX</span></span></div>
+<div class="flex gap-6">
+<a class="text-slate-400 hover:text-white transition-colors" href="#">Instagram</a>
+<a class="text-slate-400 hover:text-white transition-colors" href="#">LinkedIn</a>
+<a class="text-slate-400 hover:text-white transition-colors" href="#">YouTube</a>
+</div>
+<p class="text-slate-500 text-sm">
+                    © 2024 Aula Rx. Todos los derechos reservados.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>
